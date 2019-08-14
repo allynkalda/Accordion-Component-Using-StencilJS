@@ -10,7 +10,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface MyComponent {
+    'description': string;
     'name': string;
+    'title': string;
   }
 }
 
@@ -29,8 +31,10 @@ declare global {
 
 declare namespace LocalJSX {
   interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
+    'description'?: string;
     'name'?: string;
     'onOnToggle'?: (event: CustomEvent<any>) => void;
+    'title'?: string;
   }
 
   interface IntrinsicElements {
