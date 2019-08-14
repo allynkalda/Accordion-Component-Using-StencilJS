@@ -1,0 +1,32 @@
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid  #444;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 20px;
+    span {
+        float: right;
+    }
+}
+
+ // Following classes display/hide the 'menu'
+ // based on the state change detection in the
+ // component class
+ .active {
+    display: block;
+    background-color: #eee;
+    color: rgb(44, 43, 43);
+    width: 97%;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+ }
+
+ .inactive {
+    display: none;
+ }
