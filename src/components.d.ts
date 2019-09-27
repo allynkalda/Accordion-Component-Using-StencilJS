@@ -9,36 +9,38 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface MyComponent {
+  interface MyAccordion {
+    'color': string;
     'description': string;
-    'name': string;
-    'title': string;
+    'label': string;
+    'width': string;
   }
 }
 
 declare global {
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLMyAccordionElement extends Components.MyAccordion, HTMLStencilElement {}
+  var HTMLMyAccordionElement: {
+    prototype: HTMLMyAccordionElement;
+    new (): HTMLMyAccordionElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'my-accordion': HTMLMyAccordionElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
+  interface MyAccordion extends JSXBase.HTMLAttributes<HTMLMyAccordionElement> {
+    'color'?: string;
     'description'?: string;
-    'name'?: string;
+    'label'?: string;
     'onOnToggle'?: (event: CustomEvent<any>) => void;
-    'title'?: string;
+    'width'?: string;
   }
 
   interface IntrinsicElements {
-    'my-component': MyComponent;
+    'my-accordion': MyAccordion;
   }
 }
 

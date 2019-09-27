@@ -1,37 +1,33 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+
 .accordion {
-    background-color: #eee;
-    color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
     text-align: left;
-    border: 1px solid  #444;
-    outline: none;
-    transition: 0.4s;
     border-radius: 20px;
-    transition: opacity 500ms;
+    font-size: 1.2rem;
+    font-weight: bold;
     span {
         float: right;
     }
 }
 
 .accordion:hover {
-    background-color: rgb(155, 146, 146);
+    background-color: rgb(199, 197, 197);
 }
 
  // Following classes display/hide the 'menu'
  // based on the state change detection in the
  // component class
+ 
  .active {
     display: block;
-    background-color: rgb(227, 252, 177);
-    width: 96%;
-    height: 50px;
+    height: auto;
     border-radius: 20px;
-    padding: 10px;
+    border: 0.5px solid rgb(199, 197, 197);
+    padding: 18px;
  }
 
  .inactive {
