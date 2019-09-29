@@ -38,7 +38,8 @@ export class MyComponent {
       {this.label}
       {this.toggle ? <span>&#9650;</span> : <span>&#9660;</span>}
       </button>
-      <div class={`content-box ${this.toggle ? 'active' : 'inactive'}`}>
+      <div class={`content-box ${this.toggle ? 'open' : 'close'}`}
+      style={{width: this.width}}>
       <p>{this.description}</p>
       </div>
       </div>

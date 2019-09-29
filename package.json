@@ -1,7 +1,7 @@
 {
-  "name": "accordion-component",
+  "name": "reusable-stencil-accordion",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "reusable accordion component",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -20,6 +20,10 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allynkalda/Accordion-Component-Using-StencilJS.git"
+  },
   "devDependencies": {
     "@stencil/core": "^1.0.7"
   },
@@ -27,5 +31,6 @@
   "dependencies": {
     "@stencil/sass": "^1.0.1",
     "@types/jest": "^24.0.18"
-  }
+  },
+  "homepage": "https://github.com/allynkalda/Accordion-Component-Using-StencilJS"
 }

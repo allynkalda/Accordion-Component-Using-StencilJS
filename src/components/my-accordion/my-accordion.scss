@@ -9,20 +9,13 @@
     border-radius: 20px;
     font-size: 1.2rem;
     font-weight: bold;
+    outline: 0;
     span {
         float: right;
     }
 }
-
-.accordion:hover {
-    background-color: rgb(199, 197, 197);
-}
-
- // Following classes display/hide the 'menu'
- // based on the state change detection in the
- // component class
  
- .active {
+ .open {
     display: block;
     height: auto;
     border-radius: 20px;
@@ -30,6 +23,6 @@
     padding: 18px;
  }
 
- .inactive {
+ .close {
     display: none;
  }
